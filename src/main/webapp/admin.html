@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Learner's Academy Admin Access Portal</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            flex-wrap: wrap;
+            padding: 0 10%;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease-in-out;
+            margin: 20px;
+            width: 300px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FF9B21;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Learner's Academy <span style="color: #FF9B21;">Admin Access Portal</span></h1>
+
+<div class="container">
+    <div class="card">
+        <h2>Teacher CRUD operations</h2>
+        <p>Perform CRUD operations on Teachers.</p>
+        <a href="teacher.html">Go to Teacher CRUD</a>
+    </div>
+
+    <div class="card">
+        <h2>Class CRUD operations</h2>
+        <p>Perform CRUD operations on Classes.</p>
+        <a href="class.html">Go to Class CRUD</a>
+    </div>
+
+    <div class="card">
+        <h2>Subject CRUD operations</h2>
+        <p>Perform CRUD operations on Subjects.</p>
+        <a href="subject.html">Go to Subject CRUD</a>
+    </div>
+
+    <div class="card">
+        <h2>Student CRUD operations</h2>
+        <p>Perform CRUD operations on Students.</p>
+        <a href="student.html">Go to Student CRUD</a>
+    </div>
+
+   
+
+</body>
+</html>

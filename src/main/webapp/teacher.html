@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Learner's Academy</title>
+</head>
+<body>
+
+<h1><b><center>Admin Dashboard - Manage Learner's Academy </h1></center>
+<br>
+<h2><center>Teachers List</center></h2>
+
+<style>
+    /* Form styles */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f6f6f6;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #333;
+    }
+    
+    label {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        color: #333;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FF9B21;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-top: 10px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #f44336;
+    }
+    
+    /* Separator line */
+    hr {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        border: none;
+        height: 1px;
+        background-color: #ccc;
+    }
+</style>
+
+<h2>Add a teacher to the Teacher list</h2>
+<form action="saveTeacher" method="post">
+Teacher name: <input type="text" name="teacher" placeholder="Enter a teacher name"><br>
+Subject Id: <input type="number" name="sid" placeholder="Enter a subject Id"><br>
+<input type="submit" value="Add">
+</form>
+<br><br>
+
+<h2>Update a teacher to the list</h2>
+<form action="updateTeacher" method="post">
+Teacher ID: <input type="number" name="tid" placeholder="Enter teacher_Id to update"><br>
+Teacher name: <input type="text" name="teacher" placeholder="Enter a teacher name"><br>
+Subject Id: <input type="number" name="sid" placeholder="Enter a subject id"><br>
+<input type="submit" value="Update">
+</form>
+<br><br>
+
+<h2>Delete a teacher from the List</h2>
+<form action="deleteTeacher" method="post">
+Teacher ID: <input type="number" name="tid" placeholder="Enter teacher_id to delete"><br>
+<input type="submit" value="Delete">
+</form>
+<br><br>
+
+<a href="fetchTeacher"><h2>See the teacher list</h2></a>
+<br>
+</body>
+</html>
